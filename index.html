@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript">
+//			document.write("<strong>Hello World</strong>");
+//			var name=prompt("请输入你的名字？","唐文杰");
+//			var age=prompt("请输入你的年龄？","20");
+//			alert("名字是："+name+"年龄是："+age);
+//			
+//			var dt=prompt("请输入明明在超市购买的东西：");
+//			var num=prompt("请输入明明购买的东西的数量：");
+//			document.write("<br/>名称&nbsp数量"+"<br />"+dt+"&nbsp&nbsp&nbsp&nbsp&nbsp"+num+"<br />");
+//			
+//			var score=null; //转换为String
+//			document.write(String(score)+"<br />");
+//			var age=17;     //转换为String
+//			document.write(String(age)+"<br />");
+//			var num=undefined;  //转换为number
+//			document.write(Number(num)+"<br />");
+//			var flag=true;   //转换为number
+//			document.write(Number(flag)+"<br />");
+//			var PI=Math.PI;  //转化为  Number   整型  浮点型
+//			document.write(Number(PI)+"<br />");
+//			document.write(parseInt(PI)+"<br />");
+//			document.write(parseFloat(PI)+"<br />");
+//			
+//			var word;
+//			console.log(typeof(word));
+//			var name='Lisa';
+//			console.log(typeof(name));
+//			var age=15; age=age+"";
+//			console.log(typeof(age));
+//			var a=5; b='4'; a=a+b;
+//			console.log(typeof(a));
+//			var x=10; y='10';
+//			var flag=x==y;
+//			console.log(typeof(flag));
+
+//			var num=prompt("请输入一个五位数");
+//			var a=parseInt(num%10);
+//			var b=parseInt(num/10%10);
+//			var c=parseInt(num/100%10);
+//			var d=parseInt(num/1000%10);
+//			var e=parseInt(num/10000%10);
+//			var all=(a==e&&b==d)?"是回文数":"不是回文数";
+//			alert(all);
+//			
+//			var score=prompt("请输入成绩");
+//			var grade=score;
+//			score>=80?
+//			alert("该学生成绩为A"):alert("该学生成绩为B");
+				
+			var javab=prompt("请输入购买《JavaScript》书的数量");
+			var shu;
+			if(javab==1){
+				shu=javab*59*0.9;
+			}else if(javab==2){
+				shu=javab*59*0.8;
+			}else if(javab==3){
+				shu=javab*59*0.7;
+			}else{
+				shu=javab*59*0.65;
+			}
+			var open=prompt("请输入购买钢笔的数量");
+			var b
+				if(open==1){
+				b=open*30*0.9;
+			}else if(open==2){
+				b=open*30*0.8;
+			}else if(open==3){
+				b=open*30*0.7;
+			}else{
+				b=open*30*0.65;
+			}
+			var yj=prompt("请输入购买眼睛的数量");
+			var yy;
+				if(yj==1){
+				yy=yj*199.00*0.9;
+			}else if(yj==2){
+				yy=yj*199.00*0.8;
+			}else if(yj==3){
+				yy=yj*199.00*0.7;
+			}else{
+				yy=yj*199.00*0.65;
+			}
+			var nick=prompt("请输入购买牛奶的数量");
+			var nn;
+				if(nick==1){
+				nn=nick*68*0.9;
+			}else if(nick==2){
+				nn=nick*68*0.8;
+			}else if(nick==3){
+				nn=nick*68*0.7;
+			}else{
+				nn=nick*68*0.65;
+			}
+			var sum=shu+b+yy+nn;
+			document.write("共计:"+sum+"元");
+			
+			
+			
+			var ranking=prompt("请输入排名");
+			ranking=Number(ranking);
+			if(ranking==1){
+				alert("恭喜你获得1000元")
+			}else if(ranking==2){
+				alert("恭喜你获得800元")
+			}else if(ranking==3){
+				alert("恭喜你获得300元")
+			}else{
+				alert("你没有获奖")
+			}
+
+			
+		</script>
+	</head>
+	<body>
+		<!--如果没有var 直接一个变量赋值叫做全局变量-->
+	</body>
+	
+</html>

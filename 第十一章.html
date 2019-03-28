@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body id="demo">
+		<p>姓名：<input type="text" id="name" value=""/></p>
+		<p>年龄：<input type="number" id="age" value=""/></p>
+		<p>电话：<input type="number" id="tel" value=""/></p>
+		<p>住址：<input type="text" id="add" value=""/></p>
+		<button id="btn" onclick="">确认</button>
+		<script>
+			var demo=document.getElementById("demo");
+			var count=0;
+			console.log(demo.childNodes);
+			for (var i=0;i<demo.childNodes.length;i++) {
+				if(demo.childNodes[i]){
+					count++;
+				}
+				console.log("第"+i+"个节点名称是："+demo.childNodes[i].nodeName);
+			}
+			console.log(count);
+			//上机二
+			var p1=document.createElement("p");
+//			p1.innerHTML="性别：<input  />"
+			var txt=document.createTextNode("性别：")
+			var input=document.createElement("input");
+			p1.appendChild(txt);
+			p1.appendChild(input);
+			body.insertBefore(p,body.firstChild.nextSibling.nextSibling);
+			
+			
+//			上级三
+			btn.onclick=function(){
+				var ps=document.getElementsByName("p");
+				var str="";
+				for (var i=0;i<ps.length;i++) {
+					var txt=ps[i].firstChild.nodeValue;
+					var input=ps[i].lastChild.value;
+					str+=text+inputValue;
+				}
+				alert(str+"，");
+			}
+			
+			//上级四
+			var address=document.getElementById("add");
+			address.style.width="50px";
+			address.style.height="50px";
+			address.style.border="2px solid red";
+			
+		</script>
+	</body>
+</html>

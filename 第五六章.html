@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			
+			var a=1;
+			var num=prompt("请输入一个正整数");
+			var i=num;
+			for(i=1;i<=num;i++){
+				a=i*a;
+			}
+			alert(num+"的阶乘为"+a);
+			var b=0;
+			for(var x=1; x<=100; x++){
+			if(x%2==0){
+				b=x+b;
+			}else if(b>=2000){
+				break;
+				}
+			
+			
+			}
+			console.log(b);
+
+
+			
+			var a=6;
+			for (var i=0;i<=a;i++){
+				for(var n=a; n>i;n--){
+					document.write("&nbsp&nbsp&nbsp");
+				}
+				for(var m=0; m<=i;m++){
+				document.write(m+"&nbsp");
+				}
+				for(var y=i-1;y>=0;y--){
+				document.write(y+"&nbsp")
+				}
+			document.write("<br />");
+		}
+
+
+			
+			
+			function getSum(elh,gs,mg){
+				var elh=90;
+				var gs=84;
+				var mg=78;
+				document.write("小A的成绩总和为:"+(elh+gs+mg)+"<br />");
+			}
+			getSum();
+			
+			function min(){
+				var min=arguments[0];
+				for (var i=0;i<=arguments.length;i++) {
+					if(min>arguments[i]){
+						min=arguments[i]
+					}
+				}
+				document.write(min+"<br />");
+			}
+			min(20,34,-3,15,99,45,77);
+			
+			var num=0;
+			function add(){
+				for (num=0;num<=5;num++) {
+					document.write(num);
+					if(num==5){
+						break;
+					}
+				}
+				
+			}
+			function showNum(){
+					add();
+				}
+			showNum();
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

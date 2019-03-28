@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+//			var arry2=[1,2,3,4,5,6,7,8,9];
+//			console.log(arry2.lastIndexOf(2));
+//			console.log(arry2.lastIndexOf(2,2));
+//slice()
+//         var arry3=[1,2,3,4,5,6,7,8,2];
+//         console.log(arry3.slice(3));
+//         console.log(arry3.slice(3,7));
+//         console.log(arry3.slice(-7,-3));
+//pop()删除并返回数组的最后一个元素
+//         var arry4=[1,2,3,4,5,6,7,8,9]; 
+//         console.log(arry4.pop());
+//         console.log(arry4);
+
+//shift()删除并返回数组的第一个元素
+
+//         var arry5=[1,2,3,4,5,6,7,8,9]; 
+//         console.log(arry5.shift());
+//         console.log(arry5);
+
+//push()
+//         var arry6=[1,2,3,4,5,6,7,8,9];
+//         console.log(arry6.push(10,11,99));
+//         console.log(arry6);
+//unshift()     
+//         var arry7=[1,2,3,4,5,6,7,8,9];
+//         console.log(arry7.unshift("你好","你好啊","nihenhao"));
+//         console.log(arry7);
+//join() 把数组的所有元素放在一个字符串
+//         var arry8=[1,2,3,4,5,6,7,8,9];
+//         console.log(typeof arry8);
+//         console.log(arry8.join());
+//         console.log(arry8);
+//         console.log(arry8.join("-"));
+//sort()      按照英文字母的顺序去升序     
+//         var arry9=[1,110,50,4,5,20,7,8,9];
+//         console.log(arry9.sort());
+//         console.log(arry9.sort(function(a,b){
+//         	return a-b;
+//         }));
+//         console.log(arry9.sort(function(a,b){
+//         	return b-a;
+//         }));
+//reversr()
+//		var arry10=[1,110,50,4,5,20,7,8,9];
+//		console.log(arry10.reverse());
+//		console.log(arry10);
+//splice()
+//		var arry11=[1,2,3,4,5,6,7,8,9];
+//		console.log(typeof arry11.splice(2,3));
+//		console.log(arry11);
+//		console.log(arry11.splice(3,2,"你好","nihaoa"));
+//		console.log(arry11);
+//		console.log(arry11.splice(3,0,"你好","nihaoa"));
+//		console.log(arry11);
+
+//		判断一个数是否为回文数
+//		var a="12325";
+//		var b=a.split("");
+//		var c=b.reverse();
+//		var d=c.join("");
+//		if(a==d){
+//			alert("是回文数")
+//		}else{
+//			alert("不是回文数");
+//		}
+        
+        
+        var sp=["Nike背包","Adidas运动衫","李宁运动鞋","Kappa外套","361腰包"];
+        document.write("本次打折的商品有：<br />")
+        for(var i=0;i<sp.length;i++){
+        	document.write(sp[i]+"<br />");
+        }
+        document.write("<br />");
+        sp.shift();
+        sp.push("Adidas运动裤");
+        
+        for(var i=0;i<sp.length;i++){
+        	document.write(sp[i]+"<br />");
+        }
+        document.write("<br />");
+        sp.splice(2,0,"特步运动鞋");
+         for(var i=0;i<sp.length;i++){
+        	document.write(sp[i]+"<br />");
+        }
+         document.write("<br />");
+         document.write(sp.join("、"));
+		</script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--<input type="button" id="btn" value="打开" name="btn"/>
+		<input type="button" id="btn3" value="移动窗口" name="btn3"/>
+		<input type="button" id="btn4" value="改变窗口" name="btn4"/>-->
+		<button onclick="xin()">查看浏览器信息</button>
+		<script>
+//			1.window
+//只要是window对象里面的方法 可以不用前缀
+//			alert();
+//			window.prompt();
+//			window.confirm();
+//			var h=window.innerHeight;
+//			var w=window.innerWidth;
+//			console.log(w);
+//			console.log(h);
+//	ie 
+//			var iew2=document.documentElement.clientWidth;
+//			console.log(iew2)
+//			
+//			var w=window.innerWidth  ||  document.documentElement.clientWidth;
+//			open(url,name,specs);
+//			var btn=document.getElementById("btn");
+//			btn.onclick=function(){
+//				window.open("https://www.baidu.com");
+//			}
+//			var btn3=document.getElementById("btn3");
+//			btn3.onclick=function(){
+//				mywin.moveTo(200,200);
+//			}
+//			var btn4=document.getElementById("btn4");
+//			btn4.onclick=function(){
+//				mywin.resizeTo(400,400);
+//			}
+//			
+			var aa;
+			var newwin;
+//			var button=document.getElementById("btn");
+			function closewin(){
+				aa=newwin.close("new_file.html");
+			}
+			function openwin(){
+				newwin=window.open("new_file.html","浏览器信息","width=450,height=450");
+			}
+			
+			function xin(){
+				setTimeout(function dd(){
+				openwin();
+				},3000);
+				
+				setTimeout(function dd(){
+				closewin();
+				location.href="new_file.html"; 
+				},8000);
+				
+			}		
+		</script>
+	</body>
+</html>
